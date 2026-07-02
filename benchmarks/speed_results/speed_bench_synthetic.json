@@ -1,0 +1,93 @@
+{
+  "note": "synthetic demo (no CUDA benchmark)",
+  "batch_size": 8,
+  "d_model": 768,
+  "lengths": [
+    1024,
+    4096,
+    16384,
+    32768,
+    65536,
+    131072
+  ],
+  "models": {
+    "NL-H-H-SSM": {
+      "1024": {
+        "tokens_per_sec": 1120000.0,
+        "error": null
+      },
+      "4096": {
+        "tokens_per_sec": 1209600.0,
+        "error": null
+      },
+      "16384": {
+        "tokens_per_sec": 1299200.0,
+        "error": null
+      },
+      "32768": {
+        "tokens_per_sec": 1344000.0,
+        "error": null
+      },
+      "65536": {
+        "tokens_per_sec": 1388800.0,
+        "error": null
+      },
+      "131072": {
+        "tokens_per_sec": 1433600.0,
+        "error": null
+      }
+    },
+    "Mamba-2": {
+      "1024": {
+        "tokens_per_sec": 920000.0,
+        "error": null
+      },
+      "4096": {
+        "tokens_per_sec": 716831.4132876599,
+        "error": null
+      },
+      "16384": {
+        "tokens_per_sec": 558529.6468217216,
+        "error": null
+      },
+      "32768": {
+        "tokens_per_sec": 493015.79276669485,
+        "error": null
+      },
+      "65536": {
+        "tokens_per_sec": 435186.5174937741,
+        "error": null
+      },
+      "131072": {
+        "tokens_per_sec": 384140.4429370499,
+        "error": null
+      }
+    },
+    "Transformer": {
+      "1024": {
+        "tokens_per_sec": 880000.0,
+        "error": null
+      },
+      "4096": {
+        "tokens_per_sec": 205267.25813809762,
+        "error": null
+      },
+      "16384": {
+        "tokens_per_sec": 47880.28098128682,
+        "error": null
+      },
+      "32768": {
+        "tokens_per_sec": 23124.651419477144,
+        "error": null
+      },
+      "65536": {
+        "tokens_per_sec": null,
+        "error": "OOM"
+      },
+      "131072": {
+        "tokens_per_sec": null,
+        "error": "OOM"
+      }
+    }
+  }
+}
