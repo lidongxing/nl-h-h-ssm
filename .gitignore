@@ -19,9 +19,8 @@ Thumbs.db
 # Jupyter
 .ipynb_checkpoints/
 
-# Raw downloads (rebuild via data/download_all.sh + preprocess.py)
-data/raw/*
-!data/raw/.gitkeep
+# Raw downloads (committed for reproducibility; large .ts via Git LFS)
+data/raw/logicgraph/LogicGraph/.git/
 
 # Processed CSVs (large; stored via Git LFS — see .gitattributes)
 # data/processed/m5.csv etc. are tracked with LFS, not ignored
