@@ -1,0 +1,5 @@
+{
+  "mode": "demo",
+  "note": "Synthetic latencies to illustrate ~6\u20138\u00d7 speedup; run on CUDA for measured numbers.",
+  "triton_available": false
+}
