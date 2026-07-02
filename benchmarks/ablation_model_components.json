@@ -1,0 +1,41 @@
+{
+  "mode": "from_json",
+  "source_json": "benchmarks/ablation_model_components.json",
+  "higher_is_better": false,
+  "metric_name": "Logic ACD / M5 RMSSE (lower is better; bars show performance drop %)",
+  "baseline": "full model (0% drop; not shown \u2014 describe in caption)",
+  "series": {
+    "Logic (ACD)": {
+      "full_score": 0.36787939071655273,
+      "higher_is_better": false,
+      "raw": {
+        "full": 0.36787939071655273,
+        "wo_hyp": 0.36787939071655273,
+        "wo_acg": 0.36787939071655273,
+        "wo_ph_scan": 0.36787939071655273
+      }
+    },
+    "M5 (RMSSE)": {
+      "full_score": 3.280259132385254,
+      "higher_is_better": false,
+      "raw": {
+        "full": 3.280259132385254,
+        "wo_hyp": 4.880615234375,
+        "wo_acg": 3.6294100284576416,
+        "wo_ph_scan": 4.274045467376709
+      }
+    }
+  },
+  "performance_drop_pct": {
+    "Logic (ACD)": {
+      "w/o Hyp": 0.0,
+      "w/o ACG": 0.0,
+      "w/o PH-Scan": 0.0
+    },
+    "M5 (RMSSE)": {
+      "w/o Hyp": 48.78749017691296,
+      "w/o ACG": 10.644003475984569,
+      "w/o PH-Scan": 30.295970375633686
+    }
+  }
+}
