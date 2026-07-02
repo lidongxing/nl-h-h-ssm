@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+build/
+*.egg
+.venv/
+venv/
+.env
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Raw downloads (rebuild via data/download_all.sh + preprocess.py)
+data/raw/*
+!data/raw/.gitkeep
+
+# Processed CSVs over GitHub's 100 MB file limit (regenerate locally)
+data/processed/m5.csv
+data/processed/traffic.csv
+data/processed/electricity.csv
+data/processed/solar.csv
+
+# Generated LaTeX / figures (reproducible from scripts)
+table6_harv_fragment.tex
+table6.tex
+table5.tex
+assets/*.png
+assets/*.pdf
+!assets/.gitkeep
+
+# Training artifacts (optional: commit results/*.json for paper numbers)
+# results/*.json
