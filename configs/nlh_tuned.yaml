@@ -1,0 +1,88 @@
+defaults:
+  nlh_lr: 0.0003
+  grad_clip_norm: 1.0
+  nlh_c_base: 0.05
+  nlh_num_layers: 2
+  nlh_expand: 2
+  adamw_weight_decay: 0.01
+overrides:
+  tourism:
+    nlh_lr: 0.0003
+    grad_clip_norm: 1.0
+    nlh_c_base: 0.1
+    nlh_num_layers: 1
+    nlh_expand: 2
+    seq_len: 32
+    stride: 8
+  labor:
+    nlh_lr: 0.0004
+    grad_clip_norm: 0.5
+    nlh_c_base: 0.07
+    nlh_num_layers: 2
+    nlh_expand: 2
+    seq_len: 124
+    stride: 124
+  prison:
+    nlh_lr: 0.0004
+    grad_clip_norm: 0.5
+    nlh_c_base: 0.03
+    nlh_num_layers: 1
+    nlh_expand: 2
+    seq_len: 6
+    stride: 6
+  m5:
+    nlh_lr: 0.00015
+    grad_clip_norm: 0.5
+    nlh_c_base: 0.03
+    nlh_num_layers: 1
+    nlh_expand: 2
+    seq_len: 128
+    stride: 128
+  wiki:
+    nlh_lr: 0.0004
+    grad_clip_norm: 1.0
+    nlh_c_base: 0.12
+    nlh_num_layers: 2
+    nlh_expand: 2
+    seq_len: 32
+    stride: 8
+  electricity:
+    nlh_lr: 0.0004
+    grad_clip_norm: 1.0
+    nlh_c_base: 0.07
+    nlh_num_layers: 2
+    nlh_expand: 2
+    seq_len: 128
+    stride: 128
+  traffic:
+    nlh_lr: 0.00015
+    grad_clip_norm: 0.5
+    nlh_c_base: 0.07
+    nlh_num_layers: 1
+    nlh_expand: 2
+    seq_len: 32
+    stride: 8
+  solar:
+    nlh_lr: 0.0004
+    grad_clip_norm: 0.5
+    nlh_c_base: 0.07
+    nlh_num_layers: 2
+    nlh_expand: 2
+    seq_len: 96
+    stride: 32
+  logic:
+    nlh_lr: 5.0e-05
+    grad_clip_norm: 0.5
+    nlh_c_base: 0.03
+    nlh_num_layers: 1
+    nlh_expand: 2
+    seq_len: 32
+    stride: 1
+  medical:
+    nlh_lr: 5.0e-05
+    grad_clip_norm: 0.5
+    nlh_c_base: 0.03
+    nlh_num_layers: 1
+    nlh_expand: 2
+    seq_len: 4
+    stride: 1
