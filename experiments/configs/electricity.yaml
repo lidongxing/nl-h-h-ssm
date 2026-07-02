@@ -1,0 +1,4 @@
+model: nlh_ssm
+dataset_path: data/processed/electricity.csv
+epochs: 5
+lr: 0.001
