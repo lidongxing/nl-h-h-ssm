@@ -314,6 +314,7 @@
     "docs/descriptions/scripts/aggregate_component_ablation.py.md": "Review stub for `scripts/aggregate_component_ablation.py` — Collates ablation runs into ablation_model_components.json.",
     "docs/descriptions/scripts/aggregate_parameter_sensitivity.py.md": "Review stub for `scripts/aggregate_parameter_sensitivity.py` — Collates sweeps into figure10_parameter_sensitivity.json.",
     "docs/descriptions/scripts/commit_doc_layers.sh.md": "Review stub for `scripts/commit_doc_layers.sh` — Optional helper: batch-commit docs/descriptions/ by top-level folder with distinct messages.",
+    "docs/descriptions/scripts/generate_repo_manifest.py.md": "Review stub for `scripts/generate_repo_manifest.py` — Builds REPO_MANIFEST.json and docs/descriptions/*.md — one unique sentence per tracked path.",
     "docs/descriptions/scripts/generate_table_6.py.md": "Review stub for `scripts/generate_table_6.py` — JSON → elsarticle Table 6 LaTeX (harv format, no Impv. column).",
     "docs/descriptions/scripts/rank_table6.py.md": "Review stub for `scripts/rank_table6.py` — Prints per-dataset ranks and mean rank — quick audit of results/.",
     "docs/descriptions/scripts/run_parameter_sensitivity.sh.md": "Review stub for `scripts/run_parameter_sensitivity.sh` — Logic sweeps: nlh_c_base, nlh_expand, mamba2 d_state.",
