@@ -1,0 +1,186 @@
+{
+  "base_batch_size": 8,
+  "adaptive_batch": true,
+  "forward_only": false,
+  "d_model": 768,
+  "warmup": 10,
+  "measure": 50,
+  "lengths": [
+    1024,
+    4096,
+    16384,
+    32768,
+    65536,
+    131072
+  ],
+  "models": {
+    "Mamba-2": {
+      "1024": {
+        "forward_ms": 8.582369289398194,
+        "backward_ms": 16.876441650390625,
+        "total_ms": 25.45881093978882,
+        "tokens_per_sec": 321774.6508026016,
+        "peak_vram_gb": 1.225553035736084,
+        "batch_size": 8,
+        "error": null
+      },
+      "4096": {
+        "forward_ms": 33.45805313110352,
+        "backward_ms": 60.54909957885742,
+        "total_ms": 94.00715270996093,
+        "tokens_per_sec": 348569.221121915,
+        "peak_vram_gb": 3.439423084259033,
+        "batch_size": 8,
+        "error": null
+      },
+      "16384": {
+        "forward_ms": 135.87081176757812,
+        "backward_ms": 245.9983056640625,
+        "total_ms": 381.86911743164063,
+        "tokens_per_sec": 343238.0206117703,
+        "peak_vram_gb": 13.078266620635986,
+        "batch_size": 8,
+        "error": null
+      },
+      "32768": {
+        "forward_ms": 69.69190368652343,
+        "backward_ms": 124.85519256591797,
+        "total_ms": 194.5470962524414,
+        "tokens_per_sec": 336864.44702809374,
+        "peak_vram_gb": 6.644649982452393,
+        "batch_size": 2,
+        "error": null
+      },
+      "65536": {
+        "forward_ms": 69.96664428710938,
+        "backward_ms": 125.08078002929688,
+        "total_ms": 195.04742431640625,
+        "tokens_per_sec": 336000.33545527566,
+        "peak_vram_gb": 6.643429279327393,
+        "batch_size": 1,
+        "error": null
+      },
+      "131072": {
+        "forward_ms": 136.30996398925782,
+        "backward_ms": 247.60791015625,
+        "total_ms": 383.9178741455078,
+        "tokens_per_sec": 341406.3497088513,
+        "peak_vram_gb": 13.072338581085205,
+        "batch_size": 1,
+        "error": null
+      }
+    },
+    "Transformer": {
+      "1024": {
+        "forward_ms": 16.239718437194824,
+        "backward_ms": 38.63189506530762,
+        "total_ms": 54.87161350250244,
+        "tokens_per_sec": 149293.95140943688,
+        "peak_vram_gb": 1.192957878112793,
+        "batch_size": 8,
+        "error": null
+      },
+      "4096": {
+        "forward_ms": 77.35130096435547,
+        "backward_ms": 230.34097625732423,
+        "total_ms": 307.6922772216797,
+        "tokens_per_sec": 106496.01054625103,
+        "peak_vram_gb": 3.867030143737793,
+        "batch_size": 8,
+        "error": null
+      },
+      "16384": {
+        "forward_ms": 575.8150634765625,
+        "backward_ms": 2238.05638671875,
+        "total_ms": 2813.8714501953127,
+        "tokens_per_sec": 46580.66380072274,
+        "peak_vram_gb": 14.563319206237793,
+        "batch_size": 8,
+        "error": null
+      },
+      "32768": {
+        "forward_ms": 469.65074157714844,
+        "backward_ms": 6952.682470703125,
+        "total_ms": 7422.333212280273,
+        "tokens_per_sec": 8829.568563638517,
+        "peak_vram_gb": 7.432635307312012,
+        "batch_size": 2,
+        "error": null
+      },
+      "65536": {
+        "forward_ms": 862.3487182617188,
+        "backward_ms": 26518.54765625,
+        "total_ms": 27380.896374511718,
+        "tokens_per_sec": 2393.493591429901,
+        "peak_vram_gb": 7.432635307312012,
+        "batch_size": 1,
+        "error": null
+      },
+      "131072": {
+        "forward_ms": 3355.450341796875,
+        "backward_ms": 105534.8640625,
+        "total_ms": 108890.31440429688,
+        "tokens_per_sec": 1203.7066906919301,
+        "peak_vram_gb": 14.563319206237793,
+        "batch_size": 1,
+        "error": null
+      }
+    },
+    "NL-H-H-SSM": {
+      "1024": {
+        "forward_ms": 30.16577030181885,
+        "backward_ms": 31.894630432128906,
+        "total_ms": 62.06040073394776,
+        "tokens_per_sec": 132000.43672162242,
+        "peak_vram_gb": 2.174877643585205,
+        "batch_size": 8,
+        "error": null
+      },
+      "4096": {
+        "forward_ms": 112.63424514770507,
+        "backward_ms": 115.99962112426758,
+        "total_ms": 228.63386627197264,
+        "tokens_per_sec": 143320.84976868934,
+        "peak_vram_gb": 7.709545135498047,
+        "batch_size": 8,
+        "error": null
+      },
+      "16384": {
+        "forward_ms": 444.65135803222654,
+        "backward_ms": 458.49022521972654,
+        "total_ms": 903.1415832519531,
+        "tokens_per_sec": 145128.96142822638,
+        "peak_vram_gb": 29.959606170654297,
+        "batch_size": 8,
+        "error": null
+      },
+      "32768": {
+        "forward_ms": 228.1223175048828,
+        "backward_ms": 235.2916488647461,
+        "total_ms": 463.4139663696289,
+        "tokens_per_sec": 141419.9932587424,
+        "peak_vram_gb": 15.126407623291016,
+        "batch_size": 2,
+        "error": null
+      },
+      "65536": {
+        "forward_ms": 231.48380126953126,
+        "backward_ms": 238.2487548828125,
+        "total_ms": 469.73255615234376,
+        "tokens_per_sec": 139517.68754717812,
+        "peak_vram_gb": 15.126407623291016,
+        "batch_size": 1,
+        "error": null
+      },
+      "131072": {
+        "forward_ms": 461.3877807617188,
+        "backward_ms": 474.2072326660156,
+        "total_ms": 935.5950134277343,
+        "tokens_per_sec": 140094.803968431,
+        "peak_vram_gb": 29.959606170654297,
+        "batch_size": 1,
+        "error": null
+      }
+    }
+  }
+}
