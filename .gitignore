@@ -23,11 +23,8 @@ Thumbs.db
 data/raw/*
 !data/raw/.gitkeep
 
-# Processed CSVs over GitHub's 100 MB file limit (regenerate locally)
-data/processed/m5.csv
-data/processed/traffic.csv
-data/processed/electricity.csv
-data/processed/solar.csv
+# Processed CSVs (large; stored via Git LFS — see .gitattributes)
+# data/processed/m5.csv etc. are tracked with LFS, not ignored
 
 # Generated LaTeX / figures (reproducible from scripts)
 table6_harv_fragment.tex
