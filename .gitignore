@@ -34,6 +34,11 @@ table6_harv_fragment.tex
 table6.tex
 table5.tex
 assets/*.png
+!assets/figure7_speed_scaling.png
+!assets/figure8_operator_ablation.png
+!assets/figure9_component_ablation.png
+!assets/figure10_parameter_sensitivity.png
+!assets/figure_architecture_english.png
 assets/*.pdf
 !assets/.gitkeep
 
