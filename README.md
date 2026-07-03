@@ -399,7 +399,7 @@ If you use this code, please cite our paper (bibtex to be added upon publication
 
 ```bibtex
 @article{nlhhssm2026,
-  title   = {NL-H-H-SSM: ...},
+  title   = {Non-linear Hyperbolic State Space Models via M{\"o}bius Algebra for Hierarchical Time Series Forecasting},
   journal = {Expert Systems with Applications},
   year    = {2026}
 }
